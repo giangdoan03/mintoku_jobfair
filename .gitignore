@@ -1,0 +1,45 @@
+# WordPress Core
+wp-admin/
+wp-includes/
+license.txt
+readme.html
+
+# Mặc định không track các plugin đã cài (chạy bằng composer/git riêng thì bỏ dấu #)
+wp-content/plugins/
+
+# Không track thư mục upload (ảnh, media...)
+wp-content/uploads/
+
+# Nếu có backup/upgrade tự động
+wp-content/upgrade/
+wp-content/ai1mwbackup/
+wp-content/backups/
+
+# Mặc định không track các theme khác
+wp-content/themes/twent* 
+wp-content/themes/*
+
+# 👉 CHỈ BỎ COMMENT dòng dưới nếu bạn muốn track theme custom của bạn
+# !wp-content/themes/your-custom-theme-name/
+
+# Cache & logs
+*.log
+wp-content/cache/
+wp-content/w3tc-cache/
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/wp-cache-config.php
+wp-content/plugins/wp-super-cache/
+
+# .env / cấu hình local
+.env
+.env.*
+wp-config.php
+wp-config-sample.php
+local-config.php
+
+# Mac / Linux / Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
