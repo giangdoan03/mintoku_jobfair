@@ -69,7 +69,8 @@ $text_translations = [
     ]
 ];
 
-function t($key) {
+function t($key): string
+{
     global $text_translations, $region_slug;
     return $text_translations[$key][$region_slug] ?? $text_translations[$key]['vietnam'];
 }
