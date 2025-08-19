@@ -1,0 +1,742 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.box_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_menu .logo_page {
+    width: 100%;
+    text-align: center;
+}
+.box_menu .logo_page img {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.header_menu {
+    max-width: 430px;
+    margin: 0 auto;
+}
+.jobfair-wrapper {
+    max-width: 430px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top-left-radius: 48px;
+}
+
+.jobfair-wrapper .jobfair-body {
+    background: #FFF7F1;
+    padding-top: 25px;
+    margin-top: -20px;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    padding-bottom: 50px;
+}
+
+.jobfair-header {
+    text-align: center;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.header-text h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #444;
+    margin-top: 8px;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.jobfair-box {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section-body-title-top {
+    padding: 16px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+.jobfair-box .section-body {
+    padding: 0;
+}
+
+.jobfair-box .section-body-p {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.section-body {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.jobfair-box-header {
+    margin-top: 20px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.jobfair-box-header:after {
+	display: none;
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    right: 0;
+    top: -20px;
+    background-image: url("../images/Group 397.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jobfair-schedule-header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #003466;
+    padding-left: 55px;
+    position: relative;
+}
+
+.section-title:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+}
+
+.section-title-1:before {
+    background-image: url("../images/XMLID_186_.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-title-2:before {
+    background-image: url("../images/XMLID_51_.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-title-3:before {
+    background-image: url("../images/company.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-title-4:before {
+    background-image: url("../images/megaphone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title_en:before {
+    font-weight: 500;
+}
+
+.jobfair-box h2 {
+    font-size: 18px;
+    margin: 4px 0;
+    color: #003466;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.jobfair-box .date {
+    font-size: 16.5px;
+    margin: 10px 0;
+    color: #003466;
+    font-weight: 700;
+}
+
+.address {
+    font-size: 13.5px;
+    color: #003466;
+    margin: 15px 0;
+    font-weight: 500;
+    position: relative;
+    background: #F8F8F8;
+    border-radius: 5px;
+    padding: 15px 27px;
+}
+
+.address:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 7px;
+    background-image: url("../images/pin (6).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tags {
+    display: inline-block;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.tags span {
+    background: #e0f2ff;
+    color: #003466;
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 3px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.tags span:before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 9px;
+}
+
+.tags span:nth-child(1) {
+    background: #ECF3FC;
+}
+
+.tags span:nth-child(2) {
+    background: #FCF3EC;
+}
+
+.tags span:nth-child(3) {
+    background: #E4F4F6;
+}
+
+.tags span:nth-child(1):before {
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/g237.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tags span:nth-child(2):before {
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/hand.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tags span:nth-child(3):before {
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/charity.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cta-button {
+    display: block;
+    text-align: center;
+    background: #ff6600;
+    color: #FFFFFF;
+    padding: 16px 10px;
+    border-radius: 38px;
+    text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(to right, #E59116, #C6451C);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.cta-button:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 13px;
+    right: 28px;
+    top: 21px;
+    background-image: url("../images/arrow_white.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jobfair-schedule-box {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.jobfair-schedule-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.jobfair-schedule-header:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    right: 0;
+    top: 5px;
+    background-image: url("../images/Group 412.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.jobfair-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+.jobfair-schedule-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.jobfair-schedule-list li a:hover {
+    text-decoration: none;
+}
+
+.jobfair-schedule-list li:last-child {
+    border-bottom: none;
+}
+
+.jobfair-schedule-list li strong {
+    display: block;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.jobfair-schedule-list li span {
+    color: #777;
+    font-size: 13px;
+}
+
+.companies-box {
+    max-width: 400px;
+    margin: 24px auto;
+}
+
+.companies-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.companies-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+.company_logo {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company_logo img {
+    max-width: 100%;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+.messe-info-box {
+    max-width: 400px;
+    margin: 24px auto;
+    margin-bottom: 0;
+}
+
+.messe-info-box .section-body {
+    padding-top: 10px;
+}
+
+.messe-info-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.messe-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+.messe-list li {
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+.messe-list li:first-child {
+    border-top: none;
+}
+
+.messe-list li a {
+    display: flex;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #003466;
+    font-weight: 700;
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.messe-list li a:hover {
+    text-decoration: none;
+}
+
+.messe-list li img {
+    width: 113px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 12px;
+}
+
+span.arrow img {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    object-fit: contain;
+    margin-right: 0;
+}
+
+
+.messe-list li .arrow {
+    color: #1d3557;
+    font-size: 18px;
+}
+
+.mintoku-footer {
+    background-color: #003366;
+    color: #fff;
+    border-top-right-radius: 48px;
+    padding: 24px 20px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-logo .logo-bold {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-logo .logo-light {
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 4px;
+}
+
+.footer-logo .logo-sub {
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer-links li {
+    margin: 12px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-links li::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 0;
+    top: 4px;
+    background-image: url("../images/arrow_right_dark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    text-align: right;
+    font-size: 14px;
+}
+
+.mintoku-footer {
+    text-align: left;
+}
+
+
+.menu-icon {
+    background: linear-gradient(to bottom right, #5AA3D4, #004D90);
+    width: 53px;
+    height: 53px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1001;
+    border-radius: 0 0 0 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon span {
+    background: white;
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    position: absolute; /* cần có */
+    transition: 0.4s;
+}
+
+.menu-icon span:nth-child(1) {
+    top: 16px;
+}
+.menu-icon span:nth-child(2) {
+    top: 24px;
+}
+.menu-icon span:nth-child(3) {
+    top: 32px;
+}
+
+/* Khi active, chuyển thành dấu X */
+.menu-icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 24px;
+}
+.menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 24px;
+}
+
+
+/* Menu toàn màn hình */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+}
+
+.fullscreen-menu.active {
+    transform: translateY(0);
+}
+
+.fullscreen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.fullscreen-menu ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu ul li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer {
+    background: #FFF7F1;
+}
+
+.messe-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: none;
+    pointer-events: none;
+}
+
+.messe-popup.show {
+    display: block;
+    pointer-events: auto;
+}
+
+.messe-popup-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.messe-popup.show .messe-popup-overlay {
+    opacity: 1;
+}
+
+.messe-popup-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.messe-popup.show .messe-popup-content {
+    transform: translateY(0);
+}
+
+.messe-close-btn {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Spinner loader */
+.messe-loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top-color: #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 40px auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 1rem;
+}
+table:not(.has-border-color) :where(th, td) {
+    border: 1px solid #eee;
+}
+
+@media (max-width: 415px) {
+    .jobfair-wrapper .jobfair-body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 410px) {
+    .box_menu .logo_page img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .jobfair-box-header:after {
+        top: 16px;
+    }
+
+    .jobfair-schedule-header:after {
+        top: 25px;
+    }
+
+    .section-title {
+        font-size: 16px;
+    }
+}

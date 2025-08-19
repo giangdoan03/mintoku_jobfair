@@ -1,0 +1,3263 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header,
+footer {
+    text-align: center;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.btn-back-fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all .2s;
+    font-size: 14px;
+    z-index: 999;
+}
+.btn-back-fixed:hover {
+    background: #e2e2e2;
+}
+.btn-back-fixed .icon-back {
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+
+header {
+    top: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+.item h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer {
+    bottom: 0;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    /* Khởi tạo vị trí */
+    transition: top 0.5s ease-in-out;
+    /* Hiệu ứng chuyển tiếp */
+}
+
+
+.item {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.post-content p {
+    color: #000000;
+}
+
+.post-content h2 {
+    color: #000000;
+}
+
+.content_p .text_desc {
+    display: flex;
+    gap: 10px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #007BFF;
+    font-size: 1.5rem;
+    display: none;
+    /* Ẩn thông báo tải theo mặc định */
+}
+
+.hello-container {
+    /* Ẩn trang chi tiết mặc định */
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+    /* Hiệu ứng chuyển tiếp */
+    transform: translateX(100%);
+    /* Bắt đầu ngoài màn hình */
+}
+
+.hello-container.visible {
+    transform: translateX(0);
+    padding-top: 10px;
+    /* padding-bottom: 100px; */
+}
+
+.hello-container h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#post-body p {
+    font-size: 15px;
+}
+
+.hello-container p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.hello-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    /* background-color: #007BFF; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 57px;
+    z-index: 9;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.swiper-slide {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div#post-details {
+    padding: 0 10px;
+    height: 286px;
+    overflow: scroll;
+}
+
+.swiper-container > .swiper-slide__content {
+    position: absolute;
+    top: 0;
+}
+
+#swiper_container_content .swiper-container_c .swiper-slide {
+    height: 300px;
+    /* display: flex; */
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.8) !important;
+}
+
+div#slider_content_item {
+    max-width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+.swiper-slide__content {
+    height: 300px;
+}
+
+.single .swiper-container {
+    margin-bottom: 50px !important;
+}
+
+header#header_s.dl_show {
+    display: none;
+}
+
+#footer_s.dl_show {
+    display: none;
+}
+
+.box_img {
+    width: 100%;
+}
+
+.box_img img {
+    width: 100%;
+    object-fit: contain;
+    padding: 0;
+}
+
+.container.dl_show {
+    height: 100%;
+}
+
+/* CSS để lùi các tỉnh con */
+.taxonomy-province {
+    margin-left: 20px;
+}
+
+/* CSS cho dropdown năm */
+#filter {
+    margin-bottom: 20px;
+}
+
+#year-dropdown {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* CSS cho danh sách bài viết */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#page-term ul{
+	list-style: inherit;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* CSS cho dropdown năm */
+#filter {
+    margin-bottom: 20px;
+}
+
+#year-dropdown {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* CSS cho danh sách bài viết */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.post-thumbnail {
+    flex: 0 0 200px;
+}
+
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-info {
+    padding: 15px;
+    flex: 1;
+}
+
+.post-info a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.post-info a:hover {
+    text-decoration: underline;
+}
+
+.post-excerpt {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive layout cho thiết bị di động */
+@media (max-width: 767px) {
+    .post-item {
+        flex-direction: column; /* Đảm bảo các phần tử trong bài viết nằm theo chiều dọc trên thiết bị di động */
+    }
+
+    .post-thumbnail {
+        margin-bottom: 10px; /* Khoảng cách giữa ảnh và tiêu đề */
+        width: 100%;
+    }
+
+    .post-info {
+        text-align: left; /* Căn lề trái cho thông tin bài viết */
+    }
+
+    .post-thumbnail img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .scroll-container,
+    .scroll-area {
+        max-width: 850px;
+        height: 600px;
+        font-size: 60px;
+    }
+
+    .scroll-container {
+        overflow: auto;
+        scroll-snap-type: y mandatory;
+    }
+
+    .scroll-area {
+        scroll-snap-align: start;
+    }
+
+    .scroll-container,
+    .scroll-area {
+        margin: 0 auto;
+    }
+
+    .scroll-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    div#slider_content_item {
+        max-width: 500px;
+    }
+
+}
+
+.custom_images_visa {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center images horizontally */
+}
+
+.custom_images_visa img {
+    width: 200px;
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the container while preserving aspect ratio */
+    border: 2px solid #ddd; /* Light border around images */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.custom_images_visa img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+.swiper-no-swipe {
+    pointer-events: none;
+}
+
+
+/* Đặt kích thước và bố cục cho các phần tử */
+.post-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng vuốt */
+.post-item.swiping {
+    transform: translateX(-100%);
+}
+
+.post-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Thêm hiệu ứng fade-in khi vuốt sang trái */
+.post-item {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.post-item.swiping {
+    opacity: 0.5; /* Hiệu ứng fade-in khi vuốt */
+}
+
+/* Định nghĩa lớp để hiện thị phần tử trong trạng thái vuốt */
+.post-item.swipe-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.button_Navigation {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+}
+
+.button_Navigation .swiper-button-prev {
+    right: auto !important;
+    left: 10px !important;
+}
+
+.button_Navigation .swiper-button-next {
+    left: auto !important;
+    right: 10px !important;
+}
+
+.swiper-large-container .swiper-pagination {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+}
+
+.swiper-large-container .swiper-pagination-bullet {
+    margin: 5px;
+}
+
+.swiper-large-container .swiper-button-next, .swiper-large-container .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    margin-top: -20px; /* Cân chỉnh lại vị trí theo chiều dọc nếu cần */
+    cursor: pointer;
+    z-index: 10;
+    transition: border-left-color 0.3s ease;
+}
+
+.button_Navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(221, 221, 221, 0.8); /* Blue background with opacity */
+    color: white; /* White text color */
+    padding: 10px 22px;
+    font-size: 15px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    user-select: none; /* Prevent text selection */
+    text-align: center; /* Center text */
+    line-height: 1.5; /* Adjust line height for centering */
+    display: inline-flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {;
+    left: 0;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-size: 20px 20px;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-size: 20px 20px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(225, 225, 225, 1); /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+    background-color: rgba(225, 225, 225, 1); /* Even darker blue on click */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNyA0NCI+CiAgPHBhdGggZD0iTTI3LDIyTDI3LDIyTDUsNDRsLTIuMS0yLjFMMjIuOCwyMkwyLjksMi4xTDUsMEwyNywyMkwyNywyMnoiIGZpbGw9IiNmZmYiLz4KPC9zdmc+') !important;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNyA0NCI+CiAgPHBhdGggZD0iTTAsMjJMMjIsMGwyLjEsMi4xTDQuMiwyMmwxOS45LDE5LjlMMjIsNDRMMCwyMkwwLDIyTDAsMjJ6IiBmaWxsPSIjZmZmIi8+Cjwvc3ZnPgo=');
+    left: 10px;
+    right: auto;
+}
+
+
+.swiper-large-container .swiper-button-next, .swiper-large-container .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    margin-top: -20px; /* Cân chỉnh lại vị trí theo chiều dọc nếu cần */
+    cursor: pointer;
+    z-index: 10;
+    transition: border-left-color 0.3s ease;
+}
+
+/* Đổi màu khi hover */
+.swiper-large-container .swiper-button-next:hover, .swiper-large-container .swiper-button-prev:hover {
+    border-left-color: #ff0000; /* Đổi sang màu đỏ khi hover */
+}
+
+.swiper-large-container .swiper-button-next {
+    transform: rotate(0);
+    background-image: none;
+}
+
+.swiper-large-container .swiper-button-prev {
+    /*     transform: rotate(180deg); */
+    background-image: none;
+}
+
+.btn_back_list {
+    position: fixed;
+    bottom: 20px;
+    left: 15px; /* Đặt nút cách bên trái 15px */
+    z-index: 100;
+    padding: 10px 20px;
+    background-color: rgba(0, 122, 255, 0.5);
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+.home #page_content {
+    padding: 15px !important;
+    height: 100vh;
+}
+
+.title_list_job_province {
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+/* Hiệu ứng khi hover */
+.btn_back_list:hover {
+    background-color: #005bb5;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+/* Hiệu ứng khi nhấn */
+.btn_back_list:active {
+    transform: translateX(-50%) translateY(0);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: block;
+}
+
+/* Định dạng cho danh sách các post type */
+#page_content {
+    list-style: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0; /* Xóa khoảng cách padding */
+    display: flex; /* Hiển thị theo kiểu flex */
+    flex-direction: column; /* Xếp theo cột */
+}
+
+#page_content ul {
+    margin-left: 0;
+}
+
+#page_content li {
+    margin-bottom: 15px; /* Khoảng cách giữa các mục */
+}
+
+#page_content a {
+    display: block; /* Hiển thị liên kết như khối */
+    padding: 10px 15px; /* Padding cho liên kết */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    border-radius: 5px; /* Bo góc liên kết */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu nền và biến đổi */
+}
+
+/* Hiệu ứng khi hover */
+#page_content a:hover {
+    /*background-color: #005bb5; !* Màu nền khi hover *!*/
+    transform: translateY(-2px); /* Hiệu ứng nâng liên kết khi hover */
+}
+
+/* Hiệu ứng khi nhấn */
+#page_content a:active {
+    transform: translateY(0); /* Đặt lại vị trí khi nhấn */
+}
+
+
+/* Container chính của trang lưu trữ */
+.archive-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9; /* Màu nền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Tiêu đề của trang lưu trữ */
+.archive-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Danh sách các tỉnh */
+.province-list {
+    list-style: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0; /* Xóa khoảng cách padding */
+    margin: 0; /* Xóa khoảng cách margin */
+}
+
+.province-list li {
+    margin-bottom: 15px; /* Khoảng cách giữa các mục */
+}
+
+.province-list a {
+    display: block; /* Hiển thị liên kết như khối */
+    padding: 10px 15px; /* Padding cho liên kết */
+    background-color: #007aff; /* Màu nền liên kết */
+    color: white; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    border-radius: 5px; /* Bo góc liên kết */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển màu nền và biến đổi */
+}
+
+/* Hiệu ứng khi hover */
+.province-list a:hover {
+    background-color: #005bb5; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Hiệu ứng nâng liên kết khi hover */
+}
+
+/* Hiệu ứng khi nhấn */
+.province-list a:active {
+    transform: translateY(0); /* Đặt lại vị trí khi nhấn */
+}
+
+/* Thông báo nếu không có tỉnh để hiển thị */
+.archive-container p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+
+/* CSS cho container của loading spinner */
+#loading-spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Màu nền mờ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo nó nằm trên tất cả các phần tử khác */
+}
+
+/* CSS cho chính spinner */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3d4070; /* Màu của phần xoay */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+.disabled-link {
+    pointer-events: none; /* Vô hiệu hóa link */
+    opacity: 0.5; /* Làm mờ link để người dùng biết là bị vô hiệu */
+    cursor: not-allowed; /* Thay đổi con trỏ thành không cho phép */
+}
+
+/* Keyframes cho hoạt ảnh xoay */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Ẩn spinner khi trang đã tải xong */
+body.loaded #loading-spinner {
+    display: none;
+}
+
+span.label_year {
+    color: #000000;
+    font-size: 30px;
+}
+
+
+/* Container form */
+#filter {
+    display: flex;
+    align-items: center; /* Căn chỉnh label và select ở giữa theo chiều dọc */
+    justify-content: center; /* Căn chỉnh form ở giữa màn hình */
+    margin: 20px 0; /* Khoảng cách bên trên và dưới form */
+    padding: 10px 15px; /* Khoảng cách bên trong form */
+    background-color: #f7f7f7; /* Màu nền nhẹ nhàng */
+    border-radius: 10px; /* Bo góc cho form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+/* Label */
+#filter label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px; /* Khoảng cách giữa label và select */
+    color: #333; /* Màu chữ */
+}
+
+/* Select dropdown */
+#year-dropdown {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333; /* Màu chữ */
+    background-color: #ffffff; /* Màu nền dropdown */
+    border: 1px solid #ccc; /* Viền nhẹ */
+    border-radius: 5px; /* Bo góc cho dropdown */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    appearance: none; /* Xóa kiểu mặc định của browser */
+    cursor: pointer;
+}
+
+/* Thêm mũi tên tùy chỉnh cho dropdown */
+#year-dropdown::after {
+    content: "\25BC"; /* Mã ký tự mũi tên xuống */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Hiệu ứng khi focus vào dropdown */
+#year-dropdown:focus {
+    border-color: #007aff; /* Viền màu nổi bật */
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* Đổ bóng khi focus */
+    outline: none; /* Xóa outline mặc định */
+}
+
+.post-category {
+    display: none; /* Ẩn phần hiển thị danh mục nếu không muốn hiển thị */
+}
+
+
+/* CSS cho toàn bộ phần taxonomy year */
+.taxonomy-year {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề của trang */
+.taxonomy-year h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CSS cho container của dropdown filter */
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.filter-container label {
+    font-size: 16px;
+    color: #555;
+    margin-right: 10px;
+}
+
+.filter-container select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* CSS cho danh sách các bài viết */
+#posts-container {
+    margin-top: 20px;
+}
+
+.year-posts {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.year-posts li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.year-posts li:hover {
+    background-color: #e0e0e0;
+}
+
+.year-posts a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.year-posts img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.year-posts a:hover {
+    color: #0073aa;
+}
+
+
+.archive-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.archive-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.year-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.year-list li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: flex;
+}
+
+.year-list li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    display: block;
+}
+
+.year-list li a:hover {
+    text-decoration: underline;
+    color: #2c3e50;
+}
+
+.year-list li::before {
+    content: '•';
+    color: #3498db;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hiệu ứng hover cho mỗi bài viết */
+.post-item:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.post-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post-item a:hover {
+    color: #0073aa;
+}
+
+/* Thiết lập cho hình ảnh đại diện */
+.post-item img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề bài viết */
+.post-item a span {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #333;
+}
+
+.taxonomy-year ul {
+    margin-left: 0;
+}
+
+
+.logo_job {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.page-header form {
+    margin-top: 10px;
+}
+
+.page-header select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+.search-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Elements */
+label {
+    display: block;
+
+    font-weight: bold;
+    color: #555;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select:disabled {
+    background-color: #e9e9e9;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Results Section */
+#search-results {
+    margin-top: 20px;
+}
+
+#search-results p {
+    font-size: 18px;
+}
+
+#search-results a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#search-results a:hover {
+    text-decoration: underline;
+}
+
+
+/* Căn chỉnh logo trung tâm */
+.logo_job {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo_job img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Định dạng container chính */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Kiểu chữ cho tiêu đề */
+.wrap-content h3 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Định dạng menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu_item {
+    background-color: #007BFF;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu_item a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+/* Hiệu ứng hover cho các item menu */
+.menu_item:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.language-switcher {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.language-switcher li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.language-switcher li a {
+    text-decoration: none;
+    color: #000; /* Màu cho ngôn ngữ chưa được chọn */
+}
+
+.language-switcher li.active {
+    font-weight: bold;
+    color: #0073aa; /* Màu cho ngôn ngữ đang chọn */
+}
+
+
+/* Cải thiện phần chứa danh sách công việc */
+.page-list-job-filter {
+    max-width: 800px;
+    margin: 0 auto;
+    /*padding: 20px;*/
+    background-color: #f5f5f5; /* Màu nền nhẹ */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+
+.page-template-list-job #back-button {
+    display: none;
+}
+
+/* Tiêu đề */
+.page-list-job-filter h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Danh sách công việc */
+.page-list-job-filter ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+.page-list-job-filter li {
+    background-color: #ffffff; /* Màu nền trắng */
+    /*border: 1px solid #ddd; !* Đường viền nhẹ *!*/
+    border-radius: 5px; /* Bo tròn góc */
+    margin-bottom: 10px;
+    /*padding: 15px 0;*/
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+
+/* Liên kết */
+.page-list-job-filter a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
+
+.page-list-job-filter a:hover {
+    color: #0056b3; /* Màu liên kết khi di chuột qua */
+}
+
+/* Thông báo không có công việc */
+.page-list-job-filter p {
+    font-size: 18px;
+    color: #777;
+}
+
+.title_recommended {
+    margin-bottom: 0;
+    margin: 0;
+}
+
+.content_p {
+    padding: 10px 13px;
+    background: #ffffff;
+}
+
+.tag_item {
+    display: inline-block;
+    padding: 3px 7px;
+    font-size: 1.3vw;
+    text-align: center;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.hashtag {
+    line-height: 0.6;
+}
+
+.tag_item:nth-child(1) {
+    color: #3fa1d7;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #3fa1d7, #1fd7e1); /* Gradient viền */
+}
+
+.tag_item:nth-child(2) {
+    color: #d581c5;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #d581c5, #f7a8d4); /* Gradient viền */
+}
+
+.tag_item:nth-child(3) {
+    color: #ebba7c;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #ebba7c, #f7d698); /* Gradient viền */
+}
+
+.tag_item:nth-child(4) {
+    color: #1f70d8;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #1f70d8, #7fd1f3); /* Gradient viền */
+}
+
+span.label_text {
+    background: #c1272d;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 3px;
+    font-weight: 600;
+}
+
+span.salary_text {
+    color: #c1272d;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+/* Cải thiện phần chứa danh sách công việc */
+.page-list-job-filter {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff; /* Màu nền nhẹ */
+    border-radius: 8px; /* Bo tròn góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    box-sizing: border-box; /* Bao gồm padding và border vào kích thước tổng */
+    position: relative; /* Để tiêu đề có thể cố định */
+}
+
+/* Tiêu đề */
+.title_list_job_filter {
+    position: sticky;
+    top: 38px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+    box-shadow: none;
+}
+
+.title_list_job_filter h4 {
+    font-size: 24px; /* Kích thước chữ lớn cho tiêu đề */
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    text-align: center; /* Căn giữa */
+}
+
+/* Danh sách công việc */
+.content_list_job_filter ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+.content_list_job_filter li {
+    background-color: #ffffff; /* Màu nền trắng */
+    /*border: 1px solid #ddd; !* Đường viền nhẹ *!*/
+    border-radius: 5px; /* Bo tròn góc */
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}
+
+
+/* Liên kết */
+.content_list_job_filter a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #0073e6; /* Màu liên kết */
+}
+
+.content_list_job_filter a:hover {
+    color: #0056b3; /* Màu liên kết khi di chuột qua */
+}
+
+/* Thông báo không có công việc */
+.page-list-job-filter p {
+    font-size: 3vw;
+    color: #000000;
+    margin: 0;
+}
+
+.page-list-job-filter .title_job {
+    font-size: 13px;
+    color: #ffffff;
+    background: #29abe2;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.page-template-list-job .swiper-container-horizontal > .swiper-pagination-bullets, .page-template-list-job .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -6px;
+}
+
+.jobs_recommend img {
+    width: 100%;
+    display: block;
+    height: 250px;
+    object-fit: cover;
+}
+
+.border_black {
+    border: 5px solid #0b1142;
+}
+
+.border_purple {
+    border: 5px solid #343f70;
+}
+
+.logo_mintoku_mess img {
+    display: block;
+    padding: 0 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.box_slider .avatar_job {
+    padding-bottom: 0;
+    background: #fff;
+    position: relative;
+}
+
+.content_list_job_filter .avatar_job img {
+    width: 35vw;
+}
+
+/* Danh sách */
+.content_list_job_filter ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+.job_info {
+    /*display: flex;*/
+    justify-content: space-between;
+}
+
+.logo_mintoku_mess {
+    /*display: flex;*/
+    justify-content: center;
+    background: #f0ffff;
+    position: relative;
+}
+
+.title_job_area {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    background: #0071BC;
+    padding: 8px;
+    z-index: 1;
+}
+
+.title_job_area p {
+    font-size: 3.5vw;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.block_jobs_recommended {
+    background: #f0ffff;
+    padding-bottom: 120px;
+}
+
+/* Container để cuộn và snap */
+.content_list_job_filter {
+    /*margin-top: 110px;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+/* Danh sách */
+.content_list_job_filter ul {
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+.bl_dot .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: url(../images/icon_dot.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    margin-left: 5px;
+}
+
+.bl_dot:before {
+    content: '';
+    background: url(../images/human_left.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -119px;
+}
+
+.bl_dot:after {
+    content: '';
+    background: url(../images/human_right.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 84px;
+    height: 100px;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -95px;
+    z-index: 9;
+}
+
+span.label_job_recommended {
+    background: #ffffff;
+    color: #29abe2;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    margin-right: 6px;
+    font-weight: 600;
+    line-height: 27px;
+    width: 130px;
+}
+
+.title_job span.text {
+    position: relative;
+}
+
+.content_p .job_info .hashtag {
+    /*margin-bottom: 5px;*/
+}
+
+.salary {
+    font-size: 3.6vw;
+    padding: 7px 0;
+}
+
+.swiper-pagination-bullet {
+    opacity: .6;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.bl_dot .swiper-pagination {
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -20%;
+}
+
+#box_slider {
+    position: relative;
+    background: #fff;
+}
+
+.text_info_job .company_name {
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Liên kết */
+.content_list_job_filter a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #0073e6; /* Màu liên kết */
+}
+
+/* Hiệu ứng hover cho liên kết */
+.content_list_job_filter a:hover {
+    color: #0056b3; /* Màu liên kết khi di chuột qua */
+    text-decoration: none;
+}
+
+
+.job-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.company-info-recommended {
+    position: relative;
+}
+.title_box_left {
+   width: 50%;
+}
+.title_box_right {
+    right: 0;
+    top: 0;
+    width: 20%;
+}
+
+.title_box_right .has_label .noi-dung-field-ab_1 {
+    position: absolute;
+    top: -7px;
+}
+
+.content_list_job_filter .job_content {
+    padding-left: 15px;
+}
+
+.logo_company img {
+    width: 40px;
+    object-fit: contain;
+}
+
+.logo_company.logo_company_recommended {
+    align-items: center;
+}
+
+.content_list_job_filter .job_content {
+    padding-left: 10px;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-right: 10px;
+}
+
+.content_list_job_filter .job_content .text_info_job {
+    row-gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+img.avatar_job.avatar_job_not_recommended {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+
+.has_label.label_jobs_recommended .avatar_job {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    width: 200px;
+    top: 100px;
+}
+
+.content_list_job_filter .job_content .summary_job p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 3vw;
+}
+
+.content_list_job_filter .text_desc .hashtag {
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.content_list_job_filter .text_desc .salary {
+    margin-bottom: 6px;
+}
+
+.company_name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.job-item p {
+    /*margin: 10px 0;*/
+}
+
+
+.btn_detail .btn_content {
+    background: url('../images/btn_detail.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    text-align: center;
+    background-position: center;
+    position: relative;
+
+}
+
+.btn_detail .btn_content:after {
+    content: '';
+    background: url('../images/icon_right_db.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-size: 100%;
+    position: absolute;
+    right: 15%;
+    bottom: 6px;
+    z-index: 9;
+}
+
+.btn_detail .btn_content a {
+    color: #ffffff;
+    font-size: 3.2vw;
+    line-height: 2;
+    display: block;
+    width: 100%;
+}
+
+
+/* Nút Back to Top */
+#back-to-top {
+    position: fixed;
+    bottom: 130px;
+    right: 20px; /* Cách bên phải màn hình 20px */
+    width: 50px; /* Chiều rộng */
+    height: 50px; /* Chiều cao */
+    display: none; /* Mặc định ẩn nút */
+    background: #333;
+    color: #fff;
+    border-radius: 50%; /* Bo tròn để nút thành hình tròn */
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px; /* Căn giữa văn bản theo chiều dọc */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Hiệu ứng mượt mà */
+    z-index: 999;
+}
+
+#back-to-top.show {
+    display: block; /* Hiển thị nút khi thêm class 'show' */
+}
+
+#back-to-top:hover {
+    background: #555; /* Màu nền khi hover */
+}
+
+/* Hiệu ứng khi nút được click */
+html, body {
+    scroll-behavior: smooth; /* Hiệu ứng cuộn mượt mà */
+}
+
+/* Nút Back */
+#back-button {
+    position: fixed;
+    top: 3px; /* Cách trên màn hình 50px */
+    left: 20px; /* Cách bên trái màn hình 20px */
+    background-color: #0073e6; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Đảm bảo nút nằm trên tất cả các phần tử khác */
+    background-color: rgba(0, 123, 255, 0.6);
+}
+
+/* Đặt trạng thái ban đầu cho trang chi tiết (ẩn và di chuyển sang trái) */
+.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Khi trang đang hiển thị (fade-in) */
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+#back-button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+/* CSS cho hiệu ứng khi nội dung trượt vào */
+.page-detail {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.page-detail.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*.select2-container {*/
+/*    width: 100% !important;*/
+/*}*/
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ddd !important;
+}
+
+/* CSS cho hiệu ứng khi danh sách trượt ra */
+.page-list-job-filter.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 40px !important;
+}
+
+
+button#search_button {
+    margin-top: 20px;
+}
+
+.page-list-company {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.company-header .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #343a40;
+    text-align: center;
+}
+
+.page-template-page-list-company {
+
+}
+
+.list_company .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_company .col-md-4,
+.list_company .col-sm-6 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.list_company .box-company {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Đảm bảo các item có chiều cao bằng nhau */
+}
+
+.list_company .box-company:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.company-banner {
+    position: relative;
+}
+
+.company-banner .cover-wraper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.company-banner .cover-wraper img:hover {
+    transform: scale(1.05);
+}
+
+.company-logo {
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.company-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.company-info h3 a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.company-info h3 a:hover {
+    color: #0056b3;
+}
+
+.company-description {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Đảm bảo phần mô tả cũng chiếm đều chiều cao */
+}
+
+
+.message_link i {
+    margin-right: 10px;
+}
+
+
+.message_link a:active {
+    transform: translateY(0);
+}
+
+.message_link a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.5);
+}
+
+
+.bl_logo {
+    align-items: center;
+}
+
+.title_box_left .logo_company {
+    width: 60px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 10px);
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-container {
+    margin-bottom: 20px;
+}
+
+.main-slider, .thumbnail-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider-items {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-slider .slider-items {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.thumbnail-slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-items-wrapper {
+    width: 100%;
+}
+
+.thumbnail-items {
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail-item {
+    flex: 1 1 calc(33.33% - 10px); /* Hiển thị 3 thumbnail mỗi hàng */
+    max-width: calc(33.33% - 10px); /* Đảm bảo rằng mỗi thumbnail chiếm 1/3 hàng */
+    box-sizing: border-box;
+}
+
+.thumbnail-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.custom-textarea-content {
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+.page_single_job .summary_job {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hashtag {
+    line-height: 0.6;
+    display: none;
+}
+
+.thumbnail-item img:hover,
+.thumbnail-item.active img {
+    opacity: 1;
+}
+
+.slider-items {
+    position: relative;
+    width: 100%;
+}
+
+.slider-item {
+    display: none; /* Ẩn tất cả các ảnh lớn mặc định */
+    width: 100%;
+}
+
+.slider-item:first-child {
+    display: block; /* Hiển thị ảnh lớn đầu tiên */
+}
+
+.thumbnail-item {
+    cursor: pointer;
+    opacity: 0.6; /* Mờ các thumbnail không được chọn */
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-item.active {
+    opacity: 1; /* Làm nổi bật thumbnail đang được chọn */
+    border: 2px solid #000; /* Đặt viền để phân biệt thumbnail được chọn */
+}
+
+.slider-item {
+    display: none; /* Ẩn tất cả các ảnh lớn mặc định */
+    width: 100%;
+}
+
+.slide_mix {
+    height: 100vh;
+}
+
+.page_single_job .avatar_job img {
+    width: 100%;
+}
+
+.job_info_slide_1 .company-info {
+    flex-direction: initial;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.job_info_slide_1 .title_job {
+    font-size: 16px;
+    color: #ffffff;
+    background: #29abe2;
+    padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.job_info_slide_1 p {
+    margin: 0;
+    white-space: pre-line;
+}
+.page_single_job .noi-dung-field {
+    margin-top: 10px;
+}
+
+.page_single_job .slide-1 .avatar_job img {
+    display: block;
+}
+
+.page_single_job .logo_mintoku_mess {
+    display: flex;
+    justify-content: center;
+    background: #f0ffff;
+    padding: 0 60px;
+    padding-bottom: 13px;
+}
+
+.page_single_job .company_name {
+    font-size: 15px;
+}
+
+.page_single_job .text_info_job .company-info .box_w {
+    width: 60%;
+}
+
+.page_single_job .text_info_job .company-info .tag_item {
+    font-size: 2vw;
+}
+
+.block_jobs_recommended .avatar_job {
+    position: relative;
+}
+
+.block_jobs_recommended .avatar_job .noi-dung-field-ab_1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px 30px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.block_jobs_recommended .avatar_job .noi-dung-field-ab_2 {
+    position: absolute !important;
+    right: 0;
+    bottom: 12px;
+    border-radius: 20px !important;
+    padding: 3px 25px !important;
+    background: #FF0000;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_1.color_1 {
+    background-image: url('../images/icon_bg_1.png');
+
+}
+
+.block_jobs_recommended .noi-dung-field-ab_1.color_2 {
+    background-image: url('../images/icon_bg_2.png');
+}
+
+.block_jobs_recommended .noi-dung-field-ab_1.color_3 {
+    background-image: url('../images/icon_bg_3.png');
+}
+
+.block_jobs_recommended .noi-dung-field-ab_1 p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 3.2vw;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2 p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 3.2vw;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2.red2 {
+    background: #FF0000;
+    border-radius: 20px;
+    padding: 3px 25px;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2.red1 {
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2.red1:before {
+    content: '';
+    background: url('../images/icon_vi.png');
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -17px;
+    top: -6px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2.red2:before {
+    content: '';
+    background: url('../images/icon_ja.png');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -11px;
+    top: -4px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.block_jobs_recommended .noi-dung-field-ab_2.red1 p {
+    color: #cf1400;
+}
+
+
+.bl_list_qr .has_label {
+    max-width: 185px;
+}
+
+.has_label .noi-dung-field-ab_1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 9px 40px;
+}
+
+.has_label .noi-dung-field-ab_2 {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    border-radius: 20px;
+    padding: 3px 15px;
+    background: #FF0000;
+    width: 120px;
+    text-align: right;
+}
+
+.has_label .noi-dung-field-ab_1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.has_label .noi-dung-field-ab_1.color_1 {
+    background-image: url('../images/icon_bg_1.png');
+    width: 135px;
+    padding: 6px 19px;
+    text-align: center;
+    padding-right: 3px;
+}
+
+.has_label .noi-dung-field-ab_1.color_2 {
+    background-image: url('../images/icon_bg_2.png');
+    width: 135px;
+    padding: 6px 25px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.has_label .noi-dung-field-ab_1.color_3 {
+    background-image: url('../images/icon_bg_3.png');
+    width: 150px;
+    padding: 6px 25px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.has_label .noi-dung-field-ab_1 p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5vw;
+}
+
+.has_label .noi-dung-field-ab_2 p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5vw;
+}
+
+
+.has_label .noi-dung-field-ab_2.red1 {
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    left: 20px;
+    bottom: 14px;
+}
+
+.has_label .noi-dung-field-ab_2.red1:before {
+    content: '';
+    background: url('../images/icon_vi.png');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -17px;
+    top: -5px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.has_label .noi-dung-field-ab_2.red2:before {
+    content: '';
+    background: url('../images/icon_ja.png');
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -21px;
+    top: -6px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.has_label .noi-dung-field-ab_2.red1 p {
+    color: #cf1400;
+}
+
+
+.page_single_job .logo_company img {
+    width: 60px;
+    object-fit: contain;
+}
+
+.footer_left {
+    display: flex;
+}
+
+.footer_right p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: 3.3vw;
+    color: #ffffff !important;
+}
+
+.b_footer .f-top {
+    background: #2E3192;
+    padding: 10px 0;
+}
+
+.b_footer .f-top .footer_left {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.b_footer .f-top .footer_left p {
+    margin: 0;
+    font-size: 3.3vw;
+}
+
+.b_footer p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer_left p:nth-child(2) {
+    margin-left: 15px;
+}
+
+.page-form-search {
+    height: 100vh;
+}
+
+.video-icon-thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.video-icon-thumbnail i {
+    font-size: 36px;
+}
+
+
+.search-form label {
+    margin-bottom: 5px;
+}
+
+
+.nd-block.nd-4 {
+    align-items: center;
+    background: #e9eaec;
+    border-radius: 43px;
+    color: #263a4d;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    gap: 10px;
+    height: 24px;
+    justify-content: center;
+    letter-spacing: .15px;
+    line-height: 16px;
+    padding: 0 8px;
+}
+
+.nd-block.nd-5 {
+    align-items: center;
+    border: 1px solid #00b14f;
+    border-radius: 43px;
+    color: #00b14f;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 10px;
+    height: 24px;
+    justify-content: center;
+    letter-spacing: .15px;
+    line-height: 16px;
+    padding: 0 8px;
+}
+.job_content .text_desc {
+    align-items: flex-start;
+    display: flex;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+
+
+.message_link a {
+    /*background-color: #0084ff;*/
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    /*padding: 14px 8px;*/
+    display: block;
+    width: 100%;
+    padding: 10px 54px;
+}
+
+.message_link i {
+    margin-right: 10px;
+}
+
+
+.message_link a:active {
+    transform: translateY(0);
+}
+
+.message_link a:focus {
+    outline: none;
+}
+
+.message_link {
+    background-image: url("../images/bt_ac_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.back_page {
+    background-image: url("../images/bt_ac_2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.back_page a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 54px;
+    display: block;
+    width: 100%;
+}
+
+
+.btn_action_fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: bottom 0.3s ease;
+    z-index: 999;
+}
+
+
+.btn_action_fixed.show {
+    bottom: 76px;
+}
+
+.btn_action_fixed .btn_action {
+    display: flex;
+    justify-content: space-between;
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.btn_action_fixed .chk_ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chk_ {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+.chk_ input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #007aff;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.chk_ input[type="checkbox"]:checked {
+    background-color: #007aff;
+    border-color: #007aff;
+}
+
+.chk_ input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.chk_ input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+.chk_ label {
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.chk_ input[type="checkbox"]:hover {
+    border-color: #005bb5;
+}
+
+.chk_ input[type="checkbox"]:checked:hover {
+    background-color: #005bb5;
+}
+
+.chk_ input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.3);
+}
+
+/* Đảm bảo nút nằm chính giữa màn hình di động */
+
+/* Bố cục cho màn hình lớn (PC) */
+@media (min-width: 768px) {
+    .container .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .col-md-4 {
+        width: calc(33.333% - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .hashtag {
+        line-height: normal;
+    }
+
+    .tag_item {
+        margin: 3px;
+        margin-left: 0;
+    }
+
+    .page-list-job-filter p {
+        font-size: 1.2vw;
+    }
+
+    .salary {
+        font-size: 1.4vw;
+    }
+
+    .content_list_job_filter .job_content .summary_job p {
+        font-size: 1.5vw;
+    }
+}
+
+/* Bố cục cho mobile (1 cột) */
+@media (max-width: 767px) {
+    .container .col-md-4, .container .col-sm-6 {
+        width: 100%;
+    }
+
+    .company-logo {
+        bottom: -20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .company-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .company-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .btn_detail .btn_content a {
+        font-size: 2.2vw;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .page_single_job .salary {
+        font-size: 5.2vw;
+    }
+    .has_label.label_jobs_recommended .avatar_job {
+    	height: 100px;
+        top: 90px;
+    }
+ 
+    .has_label .noi-dung-field-ab_2.red2:before {
+        left: -17px;
+        top: -5px;
+    }
+    .logo_company img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border: 1px solid #ebebeb;
+        border-radius: 4px;
+    }
+    .block_jobs_recommended .noi-dung-field-ab_1 p {
+        text-align: right;
+    }
+    .block_jobs_recommended .avatar_job .noi-dung-field-ab_1 {
+        padding-right: 10px;
+    }
+    .swiper-slide .salary {
+        padding: 10px 0;
+    }
+    .box_slider .noi-dung-field-ab_2 {
+    	right: 15px !important;
+    }
+    .title_box_left {
+    	width: 55%;
+	}
+    .title_box_right {
+        width: 45%;
+    }
+}
+
+@media (max-width: 380px) {
+ .job_content .text_desc {
+        align-items: flex-start;
+        display: block;
+        gap: 8px;
+        padding-bottom: 8px;
+        width: 150px;
+    }
+    .nd-block.nd-4 {
+        padding: 0 8px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 350px)  {
+    .job_content .text_desc {
+        align-items: flex-start;
+        display: block;
+        gap: 8px;
+        padding-bottom: 8px;
+        width: 150px;
+    }
+    .nd-block.nd-4 {
+        padding: 0 8px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .title_list_job_filter {
+        top: 0;
+    }
+
+    #header_s {
+        padding: 20px !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        margin: 10px 0 !important;
+        margin-bottom: 40px !important;
+    }
+
+
+    .title_list_job_filter h4 {
+        font-size: 20px; /* Giảm kích thước chữ cho tiêu đề trên màn hình nhỏ */
+    }
+
+    .title_list_job_filter {
+        position: fixed;
+        display: block;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .taxonomy-year {
+        padding: 15px;
+    }
+
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-container label {
+        margin-bottom: 5px;
+    }
+
+    .filter-container select {
+        margin-bottom: 10px;
+    }
+
+    .archive-container {
+        padding: 15px;
+    }
+
+    .archive-container h1 {
+        font-size: 24px;
+    }
+
+    .year-list li {
+        padding: 10px;
+    }
+
+    .year-list li::before {
+        font-size: 18px;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-container label {
+        margin-bottom: 10px;
+    }
+
+    .year-posts li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .year-posts a {
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .post-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .post-item img {
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .box_btn_navigation {
+        position: fixed;
+        bottom: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .box_btn_pagination {
+        position: fixed;
+        bottom: -31px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .box_btn_pagination .swiper-pagination-bullet {
+        margin: 5px;
+    }
+
+    .box_btn_pagination .swiper-pagination {
+        position: fixed;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title_recommended {
+        padding-top: 15px;
+    }
+
+
+    .message_link a {
+        /*background-color: #0084ff;*/
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-align: center;
+        /*padding: 14px 8px;*/
+        display: block;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .message_link i {
+        margin-right: 10px;
+    }
+
+
+    .message_link a:active {
+        transform: translateY(0);
+    }
+
+    .message_link a:focus {
+        outline: none;
+    }
+
+    .message_link {
+        background-image: url("../images/bt_ac_1.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .back_page {
+        background-image: url("../images/bt_ac_2.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .back_page a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 54px;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .btn_action_fixed {
+        position: fixed;
+        text-align: center;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        z-index: 9;
+        padding: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+
+
+    .btn_action_fixed.show {
+        bottom: 76px;
+    }
+
+    .btn_action_fixed .btn_action {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn_action_fixed .chk_ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chk_ {
+        display: flex;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .chk_ input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        background-color: #f0f0f0;
+        border: 2px solid #007aff;
+        border-radius: 4px;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        margin-right: 10px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+
+    .chk_ input[type="checkbox"]:checked {
+        background-color: #007aff;
+        border-color: #007aff;
+    }
+
+    .chk_ input[type="checkbox"]::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .chk_ input[type="checkbox"]:checked::after {
+        opacity: 1;
+    }
+
+    .chk_ label {
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        transition: color 0.3s;
+    }
+
+    .chk_ input[type="checkbox"]:hover {
+        border-color: #005bb5;
+    }
+
+    .chk_ input[type="checkbox"]:checked:hover {
+        background-color: #005bb5;
+    }
+
+    .chk_ input[type="checkbox"]:focus {
+        box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.3);
+    }
+
+}
+
+@media (max-width: 370px) {
+    .btn_detail .btn_content:after {
+        bottom: 5px;
+    }
+    
+    .message_link a {
+    	padding: 10px 30px;
+    }
+
+}
+
+@media (max-width: 345px) {
+    .message_link {
+        padding: 10px 22px;
+        background-size: 100%;
+        width: 50%;
+        height: 40px;
+        background-position: center;
+    }
+
+    .back_page {
+        padding: 10px 30px;
+        background-size: 100%;
+         width: 50%;
+        height: 40px;
+        background-position: center;
+    }
+
+    .back_page a {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .message_link a {
+        padding: 0;
+    }
+
+    .back_page a {
+        padding: 0;
+    }
+
+}
+
+
+
+@media (min-width: 431px) {
+    .has_label .noi-dung-field-ab_1 p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 431px) {
+    .has_label .noi-dung-field-ab_1.color_3 {
+        width: 177px;
+    }
+
+    .has_label .noi-dung-field-ab_1.color_2 {
+        width: 130px;
+    }
+
+}
+
+.title_term_page {
+    background: #0071BC;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 17px;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+.logo_job_term_page {
+    max-width: 300px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.page-template-term-of-use-page .flex.items-center {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-template-term-of-use-page .list-decimal {
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+
+.page-template-term-of-use-page .list-decimal li ul li {
+    position: relative;
+}
+
+.page-template-term-of-use-page .list-decimal li ul {
+    margin-left: 0;
+}
+
+.page-template-term-of-use-page .list-decimal li ul li:before {
+    content: '-';
+}
+
+.page-template-term-of-use-page .flex.items-center img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px
+}
+
+.page-template-term-of-use-page .flex.items-center p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.page-template-term-of-use-page p {
+    color: #000000;
+}
+
+.page-term .back_page {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+body {
+    max-width: 767px;
+    margin: 0 auto !important;
+}
+
+.box_slider .summary_job {
+    margin-top: 10px;
+}
+
+.menu_section {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.menu_item {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+    margin: 20px auto;
+}
+
+.menu_item:hover {
+    background-color: #0056b3;
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+    transform: translateY(-2px);
+}
+
+
+@media (min-width: 768px) {
+    .has_label .noi-dung-field-ab_1 p {
+        font-size: 13px;
+    }
+
+    .has_label .noi-dung-field-ab_2 p {
+        font-size: 12px;
+    }
+
+    .content_list_job_filter .job_content .summary_job p {
+        font-size: 15px;
+    }
+    .btn_detail .btn_content a {
+        font-size: 15px;
+    }
+    .content_p .summary_job p {
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .block_jobs_recommended .noi-dung-field-ab_1 p {
+        font-size: 11px !important;
+        width: 150px;
+    }
+    .block_jobs_recommended .noi-dung-field-ab_2 p {
+        font-size: 11px !important;
+    }
+    .salary {
+        font-size: 15px;
+    }
+    .content_p .summary_job p {
+        font-size: 15px;
+    }
+    .logo_company p {
+        font-size: 15px;
+    }
+    .b_footer .f-top .footer_left p {
+        font-size: 15px !important;
+    }
+    .footer_right p {
+        font-size: 15px !important;
+    }
+    .btn_detail .btn_content:after {
+        right: 11%;
+        bottom: 8px;
+    }
+    .has_label .noi-dung-field-ab_2.red2:before {
+        left: -16px;
+        top: -3px;
+    }
+    .box_slider .avatar_job {
+        padding: 0;
+    }
+    .block_jobs_recommended .avatar_job .noi-dung-field-ab_1 {
+        right: 0;
+        top: 0;
+    }
+}
+
+@media (min-width: 1080px) {
+    .block_jobs_recommended .noi-dung-field-ab_1 p {
+        font-size: 1vw;
+    }
+
+    .block_jobs_recommended .noi-dung-field-ab_2 p {
+        font-size: 1vw;
+    }
+
+    .b_footer .f-top .footer_left p {
+        font-size: 1.3vw;
+    }
+
+    .footer_right p {
+        font-size: 1.3vw;
+    }
+}

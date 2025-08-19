@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Custom Theme 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-26 12:00+0000\n"
+"PO-Revision-Date: 2024-09-26 12:00+0000\n"
+"Last-Translator: Your Name <youremail@example.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/header.php:15
+msgid "Welcome to our website!"
+msgstr "Welcome to our website!"
+
+#: templates/footer.php:20
+msgid "Contact us"
+msgstr "Contact us"
+
+#: templates/home.php:30
+msgid "Read more"
+msgstr "Read more"
+
+#: templates/search.php:10
+msgid "Tìm kiếm công việc"
+msgstr "Tìm kiếm công việc"

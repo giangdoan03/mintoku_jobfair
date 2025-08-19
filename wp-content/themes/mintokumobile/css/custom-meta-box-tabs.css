@@ -1,0 +1,228 @@
+.custom-meta-box-tabs {
+    margin-bottom: 20px;
+}
+
+.custom-meta-box-tabs button {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.custom-meta-box-tabs .active {
+    background: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.custom-meta-box-content {
+    display: none;
+}
+
+.custom-meta-box-content.active {
+    display: block;
+}
+
+
+.custom-meta-box-tabs-visa {
+    margin-bottom: 20px;
+}
+.custom-meta-box-tabs-visa button {
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px 3px 0 0;
+}
+.custom-meta-box-tabs-visa .active {
+    background: #fff;
+    border-bottom: 1px solid transparent;
+}
+.custom-meta-box-content-visa {
+    display: none;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 10px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+}
+.custom-meta-box-content-visa.active {
+    display: block;
+}
+#tab3_images_container .tab3_image_wrapper {
+    margin-bottom: 10px;
+    position: relative;
+}
+#tab3_images_container .tab3_image_wrapper .tab3_remove_image_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#tab3_images_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+.tab3_image_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.tab3_image {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    border-radius: 4px; /* Bo góc ảnh */
+}
+
+.tab3_remove_image_button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    color: #d9534f; /* Màu đỏ cho biểu tượng xóa */
+    transition: background 0.3s, border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+}
+
+.tab3_remove_image_button:hover {
+    background: #d9534f;
+    border-color: #d9534f;
+    color: #fff;
+}
+
+.tab3_remove_image_button .dashicons {
+    vertical-align: middle;
+}
+
+#custom-image-metabox-container {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+#upload_images_button {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#upload_images_button:hover {
+    background-color: #005177;
+}
+
+#image-preview {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+#image-preview li {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+#image-preview img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+#image-preview a.remove-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 2px 5px;
+    text-decoration: none;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+}
+
+#image-preview a.remove-image:hover {
+    background-color: #c0392b;
+}
+
+
+/* Container for images */
+#vietnam-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Individual image item */
+.vietnam-image-item {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image styling */
+.vietnam-image-item img {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for images */
+.vietnam-image-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Remove button styling */
+.remove-vietnam-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-bottom-left-radius: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 12px;
+    transition: background 0.3s ease;
+}
+
+.remove-vietnam-image:hover {
+    background: darkred;
+}
+
+
+
+

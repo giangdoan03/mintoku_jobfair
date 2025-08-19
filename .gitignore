@@ -20,7 +20,7 @@ wp-content/themes/twent*
 wp-content/themes/*
 
 # 👉 CHỈ BỎ COMMENT dòng dưới nếu bạn muốn track theme custom của bạn
-# !wp-content/themes/your-custom-theme-name/
+!wp-content/themes/mintokumobile/
 
 # Cache & logs
 *.log
